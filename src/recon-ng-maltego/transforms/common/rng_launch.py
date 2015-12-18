@@ -25,7 +25,7 @@ def create_workspace(workspace):
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -38,7 +38,7 @@ def set_domain(workspace, domain):
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -51,7 +51,7 @@ def set_company(workspace, company):
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -64,7 +64,7 @@ def set_radius(workspace, radius):
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -93,7 +93,7 @@ use recon/hosts/gather/http/web/yahoo_site\nrun\nexit\nexit"""
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -124,7 +124,7 @@ use recon/hosts/enum/http/web/xssed\nrun\nexit\nexit"""
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -141,7 +141,7 @@ use recon/hosts/geo/http/web/wigle\nrun\nexit\nexit"""
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -162,7 +162,7 @@ use recon/contacts/gather/http/web/pgp_search\nrun\nexit\nexit"""
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -179,7 +179,7 @@ use recon/contacts/enum/http/web/should_change_password\nrun\nexit\nexit"""
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -199,7 +199,7 @@ def creds_gather(workspace):
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -214,7 +214,7 @@ def creds_enum(workspace):
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -233,7 +233,7 @@ def run_pushpin(workspace, lat, longi):
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
@@ -247,7 +247,7 @@ def contacts_mangle(workspace, syntax):
     recfile = tf.name
     tf.close()
     os.chdir(config["recon-ng/reconng_path"])
-    rng_wrkspc = subprocess.Popen(["python", "recon-ng.py", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
+    rng_wrkspc = subprocess.Popen(["python", "recon-ng", "-w", workspace, "-r", recfile], stdout=subprocess.PIPE)
     outp = rng_wrkspc.stdout.read()
     os.chdir(cwd)
 
